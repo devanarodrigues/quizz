@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: #003F66;
 }
 
 #containerQuizz::-webkit-scrollbar {
