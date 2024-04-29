@@ -1,0 +1,128 @@
+body {
+    background-image: url("https://img.freepik.com/fotos-gratis/fundo-azul-do-gradiente-de-luxo-abstrato-liso-azul-escuro-com-vinheta-preta-studio-banner_1258-70937.jpg?w=1060&t=st=1714272082~exp=1714272682~hmac=a75360a054c73d188a786bf559993b76d45ad37177b4311bc0535f12daea3c87");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#containerQuizz::-webkit-scrollbar {
+    width: 0;
+}
+
+#containerQuizz {
+    color: white;
+    min-height: 70vh;
+    overflow-y: scroll;
+    background-color: rgba(10, 10, 60, 0.66);
+    border-radius: 1rem;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    border: 1px solid rgba(240, 255, 255, 0.144);
+    box-shadow: 0px 0px 10px rgba(240, 255, 255, 0.085);
+}
+
+#score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#backcolor {
+    padding: .5rem;
+    background-color: rgba(240, 255, 255, 0.261);
+    border-radius: .5rem;
+
+}
+
+#boxQuestoes {
+    width: 100%;
+}
+
+.alternativa {
+    border-radius: .5rem;
+    background-color: rgba(240, 255, 255, 0.261);
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(240, 255, 255, 0.288);
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.alternativa:hover {
+    background-color: rgba(240, 255, 255, 0.488);
+}
+
+#bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom button {
+    border: none;
+    outline: none;
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+}
+#next{
+    display: none;
+}
+
+#iniciar {
+    border: none;
+    outline: none;
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    transition: .3s ease-in-out;
+}
+
+#iniciar:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+#again {
+    border: none;
+    outline: none;
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    transition: .3s ease-in-out;
+}
+
+#again:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+
+
+.alternativa.certo {
+    background-color: green;
+}
+
+.alternativa.errado {
+    background-color: red;
+}
+#fim{
+    background-color: rgba(10, 10, 60, 0.66);
+    border-radius: 1rem;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    border: 1px solid rgba(240, 255, 255, 0.261);
+    box-shadow: 0px 0px 10px rgba(240, 255, 255, 0.085);
+    color: white;
+}
